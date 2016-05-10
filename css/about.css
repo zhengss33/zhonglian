@@ -181,7 +181,7 @@
 }
 
 @media screen and (max-width: 450px){
-    .banner{ height: 170px; margin-top: 50px; }  
+    .banner{ height: 170px;}  
     .subnav{line-height: 40px; }
     .about{margin-top:18px;}
     .about .sidenav li {width: 45%; height: 45px; line-height: 45px; margin:0 2.5%;margin-bottom:2%;}
@@ -193,7 +193,7 @@
 }
 
 @media screen and (max-width: 360px){
-    .banner{ height: 150px; margin-top: 50px; }
+    .banner{ height: 150px;}
     .about .main .contact_us{padding: 25px 0;} 
     .about .main h3{font-size: 13px;}
 }
