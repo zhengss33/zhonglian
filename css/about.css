@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/*了解中联*/
+
+/*banner*/
+.banner{
+    clear:both; 
+    width:100%;
+    height:400px; 
+    margin-top: 100px;
+}
+
+.banner a{
+    display:block; 
+    width:100%; 
+    height:100%;
+}
+
+
+/*子导航*/
+.subnav{
+    width:1000px; 
+    margin:0 auto; 
+    color:#666; 
+    line-height:50px; 
+    border-bottom:1px solid #e4e4e4;
+}
+
+.subnav a{
+    color:#333;
+}
+.subnav a:hover{
+    color:red;
+}
+
+
+/*联系我们*/
+.about{
+    width:1000px; 
+    margin:30px auto 110px; 
+    overflow:hidden;
+}
+
+.about .sidenav{
+    float:left;
+    width:200px; 
+    overflow:hidden;
+}
+
+.about .sidenav li{
+    height:56px; 
+    margin-bottom:2px;
+    font-size: 14px;
+    line-height:56px;
+    background:#f1f1f1;
+}
+
+.about .sidenav li i{ 
+    display:inline-block; 
+    width:22px; 
+    height:22px; 
+    background:url(..//images/icon.png) no-repeat; 
+    margin:0 28px 0 15px; 
+    vertical-align:middle;
+}
+
+.about .sidenav li a{
+    display:inline-block; 
+    width:100%; 
+    height:100%; 
+    color: #969696;
+}
+
+.about .sidenav li .icon1{background-position: 0 -20px; }
+.about .sidenav li .icon2{background-position: 0 -50px; }
+.about .sidenav li .icon3{background-position: 0 -80px; }
+.about .sidenav li .icon4{background-position: 0 -110px; }
+.about .sidenav li .icon5{background-position: 0 -140px; }
+.about .sidenav li .icon6{background-position: 0 -170px; }
+.about .sidenav li .icon7{background-position: 0 -200px; }
+.about .sidenav li .icon8{background-position: 0 -230px; }
+
+/*hover效果*/
+.about .sidenav li a:hover{background:#a1bdef; color:#fff;}
+.about .sidenav li a:hover .icon1{background-position: -25px -20px;}
+.about .sidenav li a:hover .icon2{background-position: -25px -50px;}
+.about .sidenav li a:hover .icon3{background-position: -25px -80px;}
+.about .sidenav li a:hover .icon4{background-position: -25px -110px;}
+.about .sidenav li a:hover .icon5{background-position: -25px -140px;}
+.about .sidenav li a:hover .icon6{background-position: -25px -170px;}
+.about .sidenav li a:hover .icon7{background-position: -25px -200px;}
+.about .sidenav li a:hover .icon8{background-position: -25px -230px;}
+
+.about .sidenav .active{
+    background:#496fb2;
+}
+
+.about .sidenav .active a{
+    color:#fff;
+}
+
+/*联系方式*/
+.about .main{
+    float:right; 
+    width:760px;
+    min-height: 500px;
+    font-size:14px; 
+    line-height:30px; 
+    overflow: hidden;
+}
+
+.about .main .content{
+    width: 100%; 
+    height: 360px;
+    overflow: hidden;
+}
+
+.about .main h3{ 
+    font-size:14px;
+    font-weight: 500;
+}
+
+.about .main .contact_us{
+    padding:33px 20px;
+    overflow:hidden;
+}
+
+.about .main .contact_us ul{
+    float:left;
+}
+
+.about .main .contact_us .contact_biz{
+    margin-right:260px;
+}
+
+.about .main .office{
+    clear:both;
+    padding: 10px;
+}
+
+.about .main .office ul{
+    padding:10px 0 30px 55px;
+}
+
+.about .main .office  i{
+    float: left; 
+    width:38px; 
+    height:35px; 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 28px; 
+    color: #f5f5f5; 
+    font-style: normal;
+    background:url(..//images/icon_bg.png) no-repeat right; 
+}
+
+
+
+
+/*响应式*/
+@media screen and (max-width: 1020px){
+    .banner{ height: 300px; }
+    .subnav{ width:95%; }
+    .about{ width:95%; }
+    .about .sidenav{ width:20%; }
+    .about .main{ width:76%; }
+    .about .main .contact_us .contact_biz{
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .banner{ height: 250px; margin-top: 50px; }
+    .about{margin-top:22px;}
+    .about .sidenav{ float: none; width: 100%; }
+    .about .sidenav li {float: left; width: 30%; height: 50px; line-height: 50px; margin:0 1.5%;margin-bottom:1.5%;}
+    .about .sidenav li i{margin-right: 8%;}
+    .about .main{ float: none; width: 97%; margin: 15px auto 0;}
+    .about .main .content{height: 320px;}    
+    .about .main .contact_us .contact_biz{margin-right: 0;}
+    .about .main .contact_us .contact_hr{float: right;}
+}
+
+@media screen and (max-width: 450px){
+    .banner{ height: 170px; margin-top: 50px; }  
+    .subnav{line-height: 40px; }
+    .about{margin-top:18px;}
+    .about .sidenav li {width: 45%; margin:0 2.5%;margin-bottom:2%;}
+    .about .sidenav li i{margin-right: 15px;}
+    .about .main{ width: 95%; }
+    .about .main .content{height: 200px;} 
+    .about .main .contact_us{padding: 30px 5px; font-size: 12px; } 
+    .about .main .office{padding: 0;}
+}
+
+@media screen and (max-width: 360px){
+    .banner{ height: 150px; margin-top: 50px; }
+    .about .main .contact_us{padding: 25px 0;} 
+    .about .main h3{font-size: 13px;}
+}
+

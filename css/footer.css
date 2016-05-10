@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*尾部导航*/
+.footer{
+    clear: both;
+    width: 100%;
+    background: #323232;
+    overflow: hidden;
+}
+
+.footer a{
+  color: #b4b4b4;    
+}
+
+.footer a:hover{
+    color: #fff;
+}
+
+.footer .wrap{
+    width: 1000px;
+    margin: 0 auto;
+    color: #b4b4b4;
+    overflow: hidden;
+}
+
+
+.footer .wrap .list{
+    float: left;
+    margin: 30px 72px;
+    line-height: 30px;
+}
+
+.footer .wrap .list h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #e3e3e3;
+    font-weight: 500;
+}
+
+.footer p{
+    margin-bottom: 15px;
+    color: #b4b4b4;
+    text-align: center;
+}
+
+.footer p span{
+    margin: 0 10px;
+}
