@@ -184,7 +184,7 @@
     .banner{ height: 170px; margin-top: 50px; }  
     .subnav{line-height: 40px; }
     .about{margin-top:18px;}
-    .about .sidenav li {width: 45%; margin:0 2.5%;margin-bottom:2%;}
+    .about .sidenav li {width: 45%; height: 45px; line-height: 45px; margin:0 2.5%;margin-bottom:2%;}
     .about .sidenav li i{margin-right: 15px;}
     .about .main{ width: 95%; }
     .about .main .content{height: 200px;} 
