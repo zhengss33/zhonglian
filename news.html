@@ -1,107 +1,154 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="format-detection"/>
     <title>中联造价-新闻动态</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/news.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
 
 <body>
     <!--头部导航-->
-    <div class="header">
-        <div class="header_w">
-            <div class="logo">
-                <a href="#"><img src="images/logo.png"></a>
+    <!--头部导航-->
+    <div class="navbar navbar-fixed-top clearfix" role="navigation">
+        <div class="container clearfix">
+            <div class="navbar-header clearfix">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                    
+                </button>
+                <h1 class="navbar-brand">
+                    <a href="#">中联造价</a>
+                </h1>                
             </div>
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="about.html">了解中联</a></li>
-                <li><a href="#">产品和服务</a></li>
-                <li><a href="#">经典项目</a></li>
-                <li class="active"><a href="news.html">新闻动态</a></li>
-                <li><a href="#"><span class="btn">协同办公</span></a></li>
-            </ul>
+            <div class="navbar-collapse collapse clearfix">
+                <ul class="nav navbar-nav navbar-right clearfix">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="about.html">了解中联</a></li>
+                    <li><a href="#">产品和服务</a></li>
+                    <li><a href="#">经典项目</a></li>
+                    <li class="active"><a href="news.html">新闻动态</a></li>
+                    <li><a href="#" class="btn">协同办公</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!--banner-->
-    <div class="banner" style="background:url(images/banner.jpg) no-repeat center top #ece4e2;"><a href="#"></a></div>
+    <div class="banner" style="background:url(images/banner.jpg) no-repeat center top #ece4e2; background-size: cover;"><a href="#"></a></div>
 
     <!--子导航-->
     <div class="subnav">您当前的位置：<a href="#">首页</a> &gt; 新闻动态</div>
-
-    <!--新闻栏目-->
-    <div class="column_news">
-        <!--公司新闻-->
-        <div class="news">
+    
+    <div class="main">
+        <!--新闻栏目-->
+        <div class="news clearfix">
+            <!--公司新闻-->
             <div class="title">
-                <h1>公司新闻</h1>
+                <h2>公司新闻</h2>
                 <span class="more"><a href="#">更多&gt;</a></span>
             </div>
 
-            <div class="list list1">
-                <a href="#"><img src="images/news01.jpg"></a>
-                <div class="article">
-                    <h2><a href="#">中联造价获得中国石化工程建</a></h2>
-                    <span class="time">2015-01-05</span><span>09:00:00</span>
-                    <p>广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务招标公告根据增发改投号批准，并且本项目具有资金证明，增城市人民政府朱村街道办事处现对广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务进行公开招标，现将本项目招标的增城市人民政府朱村街道办事处现对广州职业技术院校迁并且本项目具有资金证建项目污水处理厂...<a href="#">查看全文</a>
-                </p>
+            <div class="list list1 clearfix">
+                <div class="pic" style="background: url(images/news01.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
+                <div class="content">
+                    <h3><a href="#">2015年过去了，我们很怀念它</a></h3>
+                    <span>2016-01-01</span><span>09:00:00</span>
+                    <p>2015年过去了，我们很怀念它！这一年对于中联造价是不平凡的一年，在这一年里我们经历了困难，感受到了压力；但始终坚持在正确的道路上做对的事情，我们不怕面对挑战，勇于改变，并且对未来已做好充分准备...<a href="#">查看全文</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="list clearfix">
+                <div class="pic" style="background: url(images/news02.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
+                <div class="content">
+                    <h3><a href="#">今天，你种土豆了吗?</a></h3>
+                    <span>2016-01-01</span><span>09:00:00</span>
+                    <p>科幻界又一良心之作—《火星救援》，虽然是一部绝地救援的片子，从头到尾却洋溢着一种“我没放弃，我就要在这绝望的生活中寻找机会和槽点”的乐观主义精神。马克重返地球了吗？用他的一句台词说就是：“我要用科学...<a href="#">查看全文</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="list  clearfix">
+                <div class="pic" style="background: url(images/news03.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
+                <div class="content">
+                    <h3><a href="#">改两个字要4500？碰瓷还是实力背锅？</a></h3>
+                    <span>2016-01-01</span><span>09:00:00</span>
+                    <p>想必大家应该看到了，今天一位名叫“阿迪力·麦麦提吐热”的用户发了一条长微博，控诉自己的名字在百度百科误的写成“阿迪力·买买提吐热”，如今我想把“买买”更正为“麦麦”却被要求交4500元钱...<a href="#">查看全文</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="list  clearfix">
+                <div class="pic" style="background: url(images/news04.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
+                <div class="content">
+                    <h3><a href="#">坚持会员，关掉门店，租玩具的兜哒真能租出200亿市场？</a></h3>
+                    <span>2016-01-01</span><span>09:00:00</span>
+                    <p>线上玩具租赁领域，常被拿来为市场背书的是美国创业公司Pley。这家在2013年创业于硅谷的线上玩具租赁公司，仅仅靠着向用户出租乐高玩具就获得了数百万美元的融资。受此影响，国内的租赁市场也再次显露出火热的迹象...<a href="#">查看全文</a>
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="list">
-            <a href="#"><img src="images/news02.jpg"></a>
-            <div class="article">
-                <h2><a href="#">中联造价获得中国石化工程建设市场</a></h2>
-                <span>2015-01-05</span><span>09:00:00</span>
-                <p>广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务招标公告根据增发改投号批准，并且本项目具有资金证明，增城市人民政府朱村街道办事处现对广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务进行公开招标，现将本项目招标的增城市人民政府朱村街道办事处现对广州职业技术院校迁并且本项目具有资金证建项目污水处理厂...<a href="#">查看全文</a>
-                </p>
+        <!--业务与客户-->  
+        <div class="business clearfix">
+            <div class="title">
+                <h2>业务和客户</h2>
+                <span class="more"><a href="#">更多&gt;</a></span>
+            </div>
+
+            <ul>
+                <li class="st1"><a href="#">中联造价获得金采网“金融同行常用供应商”资格</a><span>2015-01-05 09:00:00</span></li>
+                <li><a href="#">中联造价中标中海油北方片区交通新能源加气站项目工程结算审计</a><span>2015-01-05 09:00:00</span></li>
+                <li><a href="#">中联造价中标北京京能新能源有限公司多个新能源项目</a><span>2015-01-05 09:00:00</span></li>
+                <li><a href="#">中联造价获得金采网“金融同行常用供应商”资格</a><span>2015-01-05 09:00:00</span></li>
+                <li><a href="#">中联造价中标中海油北方片区交通新能源加气站项目工程结算审计</a><span>2015-01-05 09:00:00</span></li>
+                <li><a href="#">中联造价中标北京京能新能源有限公司多个新能源项目</a><span>2015-01-05 09:00:00</span></li>
+            </ul>
         </div>
     </div>
 
-    <div class="list">
-        <a href="#"><img src="images/news03.jpg"></a>
-        <div class="article">
-            <h2><a href="#">工程建设市场资源库其他B级成员</a></h2>
-            <span class="time">2015-01-05</span><span>09:00:00</span>
-            <p>广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务招标公告根据增发改投号批准，并且本项目具有资金证明，增城市人民政府朱村街道办事处现对广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务进行公开招标，现将本项目招标的增城市人民政府朱村街道办事处现对广州职业技术院校迁并且本项目具有资金证建项目污水处理厂...<a href="#">查看全文</a>
-            </p>
+    <!--尾部导航-->
+    <div class="footer">
+        <div class="wrap">
+            <ul class="list">
+                <li><h3>关于我们</h3></li>
+                <li><a href="#">了解中联</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+
+            <ul class="list">
+                <li><h3>产品和服务咨询</h3></li>
+                <li><a href="#">"互联网+"产品</a></li>
+                <li><a href="#">网上商城</a></li>
+                <li><a href="#">造价顾问咨询</a></li>
+                <li><a href="#">行业解决方案</a></li>
+            </ul>
+
+            <div class="list">
+                <h3>微信号：中联造价</h3>
+                <img src="images/weixin.png">
+                <p>扫一扫，关注我们</p>
+            </div>
+
+            <div class="list">  
+                <h3>协同办公平台</h3>
+                <a href="#"><img src="images/xietong.png"></a>
+            </div>
         </div>
-    </div>
-
-    <div class="list">
-        <a href="#"><img src="images/news04.png"></a>
-        <div class="article">
-            <h2><a href="#">中联造价获得中国石化工程级化工程级成员</a></h2>
-            <span class="time">2015-01-05</span><span>09:00:00</span>
-            <p>广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务招标公告根据增发改投号批准，并且本项目具有资金证明，增城市人民政府朱村街道办事处现对广州职业技术院校迁建项目污水处理厂配套主干管网工程全过程投资控制造价咨询服务进行公开招标，现将本项目招标的增城市人民政府朱村街道办事处现对广州职业技术院校迁并且本项目具有资金证建项目污水处理厂...<a href="#">查看全文</a>
-            </p>
-        </div>
-    </div>
-</div>
-
-<!--业务与客户-->  
-<div class="business">
-    <div class="title">
-        <h1>业务和客户</h1>
-        <span class="more"><a href="#">更多&gt;</a></span>
-    </div>
-
-    <ul>
-    <li class="st1"><a href="#">中联造价获得金采网“金融同行常用供应商”资格</a><span>2015-01-05</span><span>09:00:00</span></li>
-    <li><a href="#">中联造价中标中海油北方片区交通新能源加气站项目工程结算审计</a><span>2015-01-05</span><span>09:00:00</span></li>
-    <li><a href="#">中联造价中标北京京能新能源有限公司多个新能源项目</a><span>2015-01-05</span><span>09:00:00</span></li>
-    <li><a href="#">中联造价获得金采网“金融同行常用供应商”资格</a><span>2015-01-05</span><span>09:00:00</span></li>
-    <li><a href="#">中联造价中标中海油北方片区交通新能源加气站项目工程结算审计</a><span>2015-01-05</span><span>09:00:00</span></li>
-    <li><a href="#">中联造价中标北京京能新能源有限公司多个新能源项目</a><span>2015-01-05</span><span>09:00:00</span></li>
-    </ul>
-</div>
-</div>
-
-<div style="clear:both; min-width:1000px;"><iframe src="footer.html" width="100%" height="341" frameborder="0" scrolling="no"></iframe></div>
-
-
+        <p>Copyright © 2015 京ICP备07021170号<span>京公网安备110102005421</span>版权归<a href="#">中联造价咨询有限公司</a>所有</p>  
+    </div> 
 
 </body>
 </html>
