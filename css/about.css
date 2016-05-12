@@ -51,7 +51,6 @@
     margin-bottom:2px;
     font-size: 14px;
     line-height:56px;
-    background:#f1f1f1;
 }
 
 .about .sidenav li i{ 
@@ -68,6 +67,8 @@
     width:100%; 
     height:100%; 
     color: #969696;
+    background:#f1f1f1;
+    transition: all 0.5s ease-in-out;
 }
 
 .about .sidenav li .icon1{background-position: 0 -20px; }
@@ -80,7 +81,7 @@
 .about .sidenav li .icon8{background-position: 0 -230px; }
 
 /*hover效果*/
-.about .sidenav li a:hover{background:#a1bdef; color:#fff;}
+.about .sidenav li a:hover{background:#092f70; color:#fff;}
 .about .sidenav li a:hover .icon1{background-position: -25px -20px;}
 .about .sidenav li a:hover .icon2{background-position: -25px -50px;}
 .about .sidenav li a:hover .icon3{background-position: -25px -80px;}
@@ -90,8 +91,8 @@
 .about .sidenav li a:hover .icon7{background-position: -25px -200px;}
 .about .sidenav li a:hover .icon8{background-position: -25px -230px;}
 
-.about .sidenav .active{
-    background:#496fb2;
+.about .sidenav .active a{
+    background:#4370bf;
 }
 
 .about .sidenav .active a{
