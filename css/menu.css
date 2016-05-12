@@ -2,8 +2,7 @@
     width: 100%;
     min-height: 50px;
     margin-bottom: 20px;
-    border:1px solid transparent;
-    background: #fff;
+    background: url(../images/header.png) repeat;
     -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.2)
 }
@@ -12,7 +11,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1000;
 }
 
 .navbar .container{
@@ -29,6 +28,7 @@
     background-image: none;
     border:1px solid transparent; 
     border-radius: 4px;
+    outline: none;
     cursor: pointer;
 }
 
@@ -97,7 +97,7 @@
     padding: 5px 0 15px 0;
     color: #333;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     position: relative;
 }
 
@@ -108,12 +108,14 @@
     line-height: 30px;
     color: #fff;
     text-align: center;
-    background:  #2d559c;
+    background:  #4370bf;
     border-radius: 4px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
  .navbar-collapse>.navbar-nav >li>a.btn:hover{
-    background: #496fb2;
+    background: #092f70;
     color: #fff;
 }
 
