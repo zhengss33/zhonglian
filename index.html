@@ -15,7 +15,7 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/respond.min.js"></script>
   <script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
-  <script src="js/slides.js"></script>
+  <script src="js/jquery.royalslider.min.js"></script>
 </head>
 
 <body>
@@ -52,30 +52,48 @@
 
 <!--banner-->
 <div class="banner">
-    <div id="myCarousel" class="carousel slide">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-            <div class="active item" style="background: url(images/index_banner01.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
-            <div class="item" style="background: url(images/index_banner02.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
-            <div class="item" style="background: url(images/index_banner03.jpg) no-repeat top center; background-size: cover;"><a href="#"><img src=""></a></div>
-            <div class="item" style="background: url(images/index_banner04.jpg) no-repeat top center; background-size: cover;"><a href="#"></a></div>
+    <div class="sliderContainer fullWidth clearfix">
+        <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+            <div class="rsContent"> <img class="rsImg" src="images/index_banner01.jpg" /></div>
+            <div class="rsContent"> <img class="rsImg" src="images/index_banner02.jpg" /></div>
+            <div class="rsContent"> <img class="rsImg" src="images/index_banner03.jpg" /></div>
+            <div class="rsContent"> <img class="rsImg" src="images/index_banner04.jpg" /> 
+                <span class="photosBy rsAbsoluteEl" data-fade-effect="fa;se" data-move-offset="40" data-move-effect="bottom" data-speed="200">Photos by Gilderic</span> 
+            </div>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev"></span></a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next"></span></a>
     </div>
 </div>
-<script type="text/javascript">
- $('.carousel').carousel({
-  interval: 3000,
-  pause: 'hover'
-});
+<script>
+    jQuery(document).ready(function($) {
+        $('#full-width-slider').royalSlider({
+            arrowsNav: false,
+            loop: true,
+            keyboardNavEnabled: true,
+            controlsInside: false,
+            imageScaleMode: 'fill',
+            arrowsNavAutoHide: false,
+            autoScaleSlider: true, 
+            autoScaleSliderWidth: 960,     
+            autoScaleSliderHeight:350,
+            controlNavigation: 'bullets',
+            thumbsFitInViewport: false,
+            navigateByClick: true,
+            startSlideId: 0,
+            autoPlay: {
+                enabled: true,
+                stopAtAction: false,
+                pauseOnHover: true,
+            },
+            transitionType:'move',
+            globalCaption: false,
+            deeplinking: {
+                enabled: true,
+                change: false
+            },
+            imgWidth: 2000,
+            imgHeight:660
+        });
+    });
 </script>
 
 <div class="main">
@@ -149,11 +167,11 @@
                 <li style="background: url(images/al.png) no-repeat center center #fff; background-size: cover;"></li>
 
                 <li style="background: url(images/zs.png) no-repeat center center #fff; background-size: cover;"></li>
-                <li style="background: url(images/zh.png) no-repeat center center #fff; background-size: cover;"></li>
+                <li style="background: url(images/hd.png) no-repeat center center #fff; background-size: cover;"></li>
                 <li style="background: url(images/zm.png) no-repeat center center #fff; background-size: cover;"></li>
-                <li style="background: url(images/zd.png) no-repeat center center #fff; background-size: cover;"></li>
-                <li style="background: url(images/zd1.png) no-repeat center center #fff; background-size: cover;"></li>
-                <li style="background: url(images/zn.png) no-repeat center center #fff; background-size: cover;"></li>
+                <li style="background: url(images/zhd.png) no-repeat center center #fff; background-size: cover;"></li>
+                <li style="background: url(images/gd.png) no-repeat center center #fff; background-size: cover;"></li>
+                <li style="background: url(images/hn.png) no-repeat center center #fff; background-size: cover;"></li>
                 <li style="background: url(images/yq.png) no-repeat center center #fff; background-size: cover;"></li>
                 <li style="background: url(images/ft.png) no-repeat center center #fff; background-size: cover;"></li>
                 <li style="background: url(images/hx.png) no-repeat center center #fff; background-size: cover;"></li>
